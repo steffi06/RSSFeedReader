@@ -78,7 +78,7 @@
 - (void)newRSSRequest {
 
     self.results = [[NSMutableArray alloc]init];
-    NSLog(@"%@", self.results);
+
 
     RKClient *client = [RKClient sharedClient];
     [client get:@"/rss.xml" delegate:self];
@@ -86,7 +86,7 @@
 
 - (void)request:(RKRequest *)request didLoadResponse:(RKResponse *)response
 {
-    NSLog(@"%@",response);
+
     self.responseLoaded = YES;
     
     NSError *error;
@@ -98,10 +98,10 @@
     for (NSDictionary *item  in  items) {
         Article *article = [[Article alloc]initWithTitle:[item objectForKey:@"title"] andSubtitle:[item objectForKey:@"description"] andLink:[item objectForKey:@"link"]];
         [self.results addObject:article];
-        NSLog(@"%@", article);
+
     }
     
-    NSLog(@"%@", self.results);
+
     
     [self.tableView reloadData];
     
