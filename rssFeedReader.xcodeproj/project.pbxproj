@@ -18,19 +18,19 @@
 		A210215615ED88B800997BCC /* FeedTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A210215415ED88B800997BCC /* FeedTableViewController.xib */; };
 		A210217315EDA0D900997BCC /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A210217115EDA0D900997BCC /* WebViewController.m */; };
 		A210217415EDA0DA00997BCC /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A210217215EDA0D900997BCC /* WebViewController.xib */; };
-		A210218615EEA29200997BCC /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = A210218515EEA29200997BCC /* Article.m */; };
+		A210219F15EF0E3E00997BCC /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = A210218515EEA29200997BCC /* Article.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		473CEC49DA8D4F5D82810B7B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A210212C15ED85D500997BCC /* RSSFeedReader.xcodeproj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSFeedReader.xcodeproj.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A210212C15ED85D500997BCC /* RSSFeedReader.xcodeproj.xcodeproj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSFeedReader.xcodeproj.xcodeproj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A210213015ED85D500997BCC /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A210213215ED85D500997BCC /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A210213415ED85D500997BCC /* CoreGraphics.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A210213815ED85D500997BCC /* RSSFeedReader.xcodeproj-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RSSFeedReader.xcodeproj-Info.plist"; sourceTree = "<group>"; };
+		A210213815ED85D500997BCC /* RSSFeedReader.xcodeproj.xcodeproj-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RSSFeedReader.xcodeproj.xcodeproj-Info.plist"; sourceTree = "<group>"; };
 		A210213A15ED85D500997BCC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A210213C15ED85D500997BCC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A210213E15ED85D500997BCC /* RSSFeedReader.xcodeproj-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSSFeedReader.xcodeproj-Prefix.pch"; sourceTree = "<group>"; };
+		A210213E15ED85D500997BCC /* RSSFeedReader.xcodeproj.xcodeproj-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSSFeedReader.xcodeproj.xcodeproj-Prefix.pch"; sourceTree = "<group>"; };
 		A210213F15ED85D500997BCC /* RSSFeedReaderAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSFeedReaderAppDelegate.h; sourceTree = "<group>"; };
 		A210214015ED85D500997BCC /* RSSFeedReaderAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSFeedReaderAppDelegate.m; sourceTree = "<group>"; };
 		A210215215ED88B800997BCC /* FeedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedTableViewController.h; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 		A210212D15ED85D500997BCC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A210212C15ED85D500997BCC /* RSSFeedReader.xcodeproj.app */,
+				A210212C15ED85D500997BCC /* RSSFeedReader.xcodeproj.xcodeproj.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,10 +110,10 @@
 		A210213715ED85D500997BCC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A210213815ED85D500997BCC /* RSSFeedReader.xcodeproj-Info.plist */,
+				A210213815ED85D500997BCC /* RSSFeedReader.xcodeproj.xcodeproj-Info.plist */,
 				A210213915ED85D500997BCC /* InfoPlist.strings */,
 				A210213C15ED85D500997BCC /* main.m */,
-				A210213E15ED85D500997BCC /* RSSFeedReader.xcodeproj-Prefix.pch */,
+				A210213E15ED85D500997BCC /* RSSFeedReader.xcodeproj.xcodeproj-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -121,9 +121,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A210212B15ED85D500997BCC /* RSSFeedReader.xcodeproj */ = {
+		A210212B15ED85D500997BCC /* RSSFeedReader.xcodeproj.xcodeproj */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A210214415ED85D500997BCC /* Build configuration list for PBXNativeTarget "RSSFeedReader.xcodeproj" */;
+			buildConfigurationList = A210214415ED85D500997BCC /* Build configuration list for PBXNativeTarget "RSSFeedReader.xcodeproj.xcodeproj" */;
 			buildPhases = (
 				A210212815ED85D500997BCC /* Sources */,
 				A210212915ED85D500997BCC /* Frameworks */,
@@ -134,9 +134,9 @@
 			);
 			dependencies = (
 			);
-			name = RSSFeedReader.xcodeproj;
+			name = RSSFeedReader.xcodeproj.xcodeproj;
 			productName = rssFeedReader;
-			productReference = A210212C15ED85D500997BCC /* RSSFeedReader.xcodeproj.app */;
+			productReference = A210212C15ED85D500997BCC /* RSSFeedReader.xcodeproj.xcodeproj.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -161,7 +161,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A210212B15ED85D500997BCC /* RSSFeedReader.xcodeproj */,
+				A210212B15ED85D500997BCC /* RSSFeedReader.xcodeproj.xcodeproj */,
 			);
 		};
 /* End PBXProject section */
@@ -201,11 +201,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A210219F15EF0E3E00997BCC /* Article.m in Sources */,
 				A210213D15ED85D500997BCC /* main.m in Sources */,
 				A210214115ED85D500997BCC /* RSSFeedReaderAppDelegate.m in Sources */,
 				A210215515ED88B800997BCC /* FeedTableViewController.m in Sources */,
 				A210217315EDA0D900997BCC /* WebViewController.m in Sources */,
-				A210218615EEA29200997BCC /* Article.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,9 +277,9 @@
 			baseConfigurationReference = A2BC1A2115FF401AB7405F58 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "rssFeedReader/RSSFeedReader.xcodeproj-Prefix.pch";
-				INFOPLIST_FILE = "rssFeedReader/RSSFeedReader.xcodeproj-Info.plist";
-				PRODUCT_NAME = RSSFeedReader.xcodeproj;
+				GCC_PREFIX_HEADER = "rssFeedReader/RSSFeedReader.xcodeproj.xcodeproj-Prefix.pch";
+				INFOPLIST_FILE = "rssFeedReader/RSSFeedReader.xcodeproj.xcodeproj-Info.plist";
+				PRODUCT_NAME = RSSFeedReader.xcodeproj.xcodeproj;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -289,9 +289,9 @@
 			baseConfigurationReference = A2BC1A2115FF401AB7405F58 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "rssFeedReader/RSSFeedReader.xcodeproj-Prefix.pch";
-				INFOPLIST_FILE = "rssFeedReader/RSSFeedReader.xcodeproj-Info.plist";
-				PRODUCT_NAME = RSSFeedReader.xcodeproj;
+				GCC_PREFIX_HEADER = "rssFeedReader/RSSFeedReader.xcodeproj.xcodeproj-Prefix.pch";
+				INFOPLIST_FILE = "rssFeedReader/RSSFeedReader.xcodeproj.xcodeproj-Info.plist";
+				PRODUCT_NAME = RSSFeedReader.xcodeproj.xcodeproj;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -308,7 +308,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A210214415ED85D500997BCC /* Build configuration list for PBXNativeTarget "RSSFeedReader.xcodeproj" */ = {
+		A210214415ED85D500997BCC /* Build configuration list for PBXNativeTarget "RSSFeedReader.xcodeproj.xcodeproj" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A210214515ED85D500997BCC /* Debug */,
