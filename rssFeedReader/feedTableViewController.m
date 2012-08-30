@@ -43,13 +43,14 @@
     
     self.responseLoaded = NO;
 
-    self.results = [[NSMutableArray alloc]init];
     
     self.baseURL = @"http://www.tmz.com";
     [RKClient clientWithBaseURLString:self.baseURL];
     [self newRSSRequest];
     
-    
+    UIBarButtonItem *reloadButton = [[UIBarButtonItem alloc] initWithTitle:@"Reload" style:UIBarButtonItemStyleDone target:self action:@selector(newRSSRequest)];
+    self.navigationItem.rightBarButtonItem = reloadButton;
+
 }
 
 -(void)viewDidAppear:(BOOL)animated {
@@ -76,6 +77,9 @@
 
 - (void)newRSSRequest {
 
+    self.results = [[NSMutableArray alloc]init];
+    NSLog(@"%@", self.results);
+
     RKClient *client = [RKClient sharedClient];
     [client get:@"/rss.xml" delegate:self];
 }
@@ -94,7 +98,10 @@
     for (NSDictionary *item  in  items) {
         Article *article = [[Article alloc]initWithTitle:[item objectForKey:@"title"] andSubtitle:[item objectForKey:@"description"] andLink:[item objectForKey:@"link"]];
         [self.results addObject:article];
+        NSLog(@"%@", article);
     }
+    
+    NSLog(@"%@", self.results);
     
     [self.tableView reloadData];
     
